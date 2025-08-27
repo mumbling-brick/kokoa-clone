@@ -9,16 +9,31 @@
     <div id="status-bar">
         <div class="status-bar__column">
             <span>No Service</span>
-            <!-- To do : Wifi Icon -->
+            <i class="fa-solid fa-wifi"></i>
         </div>
         <div class="status-bar__column">
             <span>18:43</span>
         </div>
         <div class="status-bar__column">
             <span>110%</span>
-            <!-- Battery Icon -->
-            <!-- Lightning Icon -->
+            <i class="fa-solid fa-battery-full"></i>
+            <i class="fa-solid fa-bolt"></i>
         </div>
     </div>
+    <header class="welcome-header">
+        <h1 class="welcome-header__title">welcome to Kokoa Clone</h1>
+        <p class="welcome-header__text">
+            If you have a Kokoa Account, log in with your email of phone number.
+        </p>
+    </header>
+
+    <form class="login-form">
+        <input type="text" placeholder="Email or phone number"/>
+        <input type="password" placeholder="Password"/>
+        <input type="submit" value="Log in"/>
+        <a href="#">Find Kokoa Account or Password</a>
+    </form>
+    
+    <script src="https://kit.fontawesome.com/893b5d4369.js" crossorigin="anonymous"></script>
 </body>
 </html>
