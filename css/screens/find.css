@@ -50,6 +50,8 @@
 
 .open-chat__post {
     display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .open-chat__post-column__title {
@@ -87,7 +89,33 @@
     background-color: var(--gray);
 }
 
-
 .open-chat__post-column__members__status {
     color: #ff9fda;
+}
+
+.open-chat__post-column__photo {
+    position: relative;
+}
+
+.open-chat__post-column__photo img {
+    width: 120px;
+    height: 120px;
+    border-radius: 20px;
+}
+
+.open-chat__post-column__heart-count {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 5px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    font-size: 12px
+}
+
+.open-chat__post-column__heart-count span {
+    margin-left: 3px;
 }
