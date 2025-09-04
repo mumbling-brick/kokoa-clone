@@ -41,6 +41,7 @@
 .message-row {
     width: 100%;
     display: flex;
+    margin-bottom: 25px;
 }
 
 .message-row img {
@@ -57,7 +58,7 @@
 
 .message__info {
     display: flex;
-    align-items: end;
+    align-items: flex-end;
 }
 
 .message__bubble {
@@ -72,4 +73,18 @@
 .message__time {
     opacity: 0.8;
     font-size: 14px;
+}
+
+
+
+.message-row--own .message__bubble {
+    background-color: var(--yellow);
+    border-top-right-radius: 0px;
+    border-top-left-radius: 15px;
+    margin-right: 0px;
+    margin-left: 5px;
+}
+
+.message-row--own, .message__info {
+    flex-direction: row-reverse;
 }
